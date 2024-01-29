@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    padding-left: 30px;
+    color: #E5E7EB;
+    margin-top: 10px;
+    li{
+        margin-bottom: 7px;
+    }
+}
+h2,p,span,input,div,h4,a{
+    font-family: "Inter";
+}
+body{
+    position: relative;
+    background-color: #121826;
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card-container{
+        min-width: 500px;
+        .card{
+            h2{
+                margin-bottom: 38px;
+                color: #E5E7EB;
+                font-weight: 600;
+                font-size: 20px;
+            }
+            h4{
+                font-size: 1em;
+                color: #A1A1A9;
+                margin-top: 1.5rem;
+            }
+            h3{
+                color: #E5E7EB;
+                margin-bottom: 25px;
+            }
+            p{
+                color:#A1A1A9;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            #name{
+                margin-bottom: 25px;
+            }
+            border: 1px solid #4D5562;
+            padding: 35px 40px;
+            border-radius: 12px;
+            background-color: #212936;
+            min-width: 350px;
+            input{
+                padding: 20px;
+                border-radius: 16px;
+                border: none;
+                outline: none;
+                background-color: #212936;
+                border: 2.5px solid #4D5562;
+                width: 400px;
+                font-family: "Inter";
+                color:#E5E7EB;
+            }
+
+            .btn-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 43px;
+                button{
+                    text-decoration: none;
+                    border: none;
+                    color: #E5E7EB;
+                    background: linear-gradient(#845EEE,#652CD1);
+                    font-size: 12px;
+                    border-radius: 19px;
+                    padding: 12.5px 40px;
+                    transition: .3s;
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+      
+        }
+    }
+
+    .step{
+        margin-top: 20px;
+        font-size: 14px;
+        color: #4D5562;
+        display: flex;
+        align-items:center;
+        justify-content:flex-start;
+        padding-left: 8rem;
+        gap: 20px;
+        span{
+            margin-right: 10px;
+        }
+        button{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: none;
+            background-color: #394150;
+            transition: .3s;
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
+        .check{
+            background-color: #845EEE;
+        }
+        .active{
+            box-shadow: 0 0 0 5px #662cd186;
+            background-color: #845EEE;
+        }
+    }
+}
+.error{
+    color: black;
+    background-color: rgba(255, 152, 152, 0.986);
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: 1px solid red;
+    margin-top: 15px;
+    padding: 20px;
+    font-family: "Inter";
+}
+
+.first-ball{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 290px;
+    svg{
+
+        width: 100%;
+        position: relative;
+        height: auto;
+        opacity: 1;
+    }
+}
+.second-ball{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    background-image: url("../img/blur-radial.svg");
+    svg{
+
+        width: 100%;
+        position: relative;
+        height: auto;
+        opacity: 0.2;
+    }
+}
+
+.option{
+    background-color: #394150;
+    padding: 20px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    color: #A1A1A9;
+    width: 450px;
+    transition: .3s;
+    &:hover{
+        transform: scale(1.04);
+        cursor: pointer;
+    }
+}
+.option-click{
+    background-color: #652CD1;
+    color: #E5E7EB;
+}
+.ocultar{
+    display: none;
+}
+
+/*# sourceMappingURL=style.scss.map */
